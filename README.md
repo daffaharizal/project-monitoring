@@ -22,3 +22,9 @@
 ### After the data is added/updated
 
 ![demo](./public/assets/afterDemo.png)
+
+### Responsive Website (Mobile)
+
+![demo](./public/assets/mobileDemo.png)
+
+![demo](./public/assets/mobileDemo2.png)
