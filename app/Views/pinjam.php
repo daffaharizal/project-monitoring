@@ -39,7 +39,10 @@
               <td><?= $no; ?></td>
               <td><?= $pinjam->nama_mahasiswa; ?></td>
               <td><?= $pinjam->judul_buku; ?></td>
-              <td><?= $pinjam->project_leader; ?></td>
+              <td>
+                <p class="m-0"><?= $pinjam->project_leader; ?></p>
+                <p class="text-secondary mb-2"><?= $pinjam->leader_email; ?></p>
+              </td>
               <td><?= $pinjam->tanggal_pinjam; ?></td>
               <td><?= $pinjam->tanggal_pengembalian; ?></td>
               <td class="pl-2">
