@@ -13,16 +13,16 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <div class="container">
-    <h1 style="font-family: 'Inter', sans-serif;" class="fw-bold text-center mt-4"> Tambah Daftar Peminjam Buku </h1>
+    <h1 style="font-family: 'Inter', sans-serif;" class="fw-bold text-center mt-4"> Tambah Daftar Project </h1>
     <form style="font-family: 'Inter', sans-serif;" method="post" action="<?= base_url('proses_add_pinjam') ?>">
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Nama Mahasiswa </label>
-        <input type="text" class="form-control" id="nama_mahasiswa" name="nama_mahasiswa">
+        <label for="exampleFormControlInput1" class="form-label"> Project Name </label>
+        <input type="text" class="form-control" id="project_name" name="project_name">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Judul Buku </label>
-        <input type="text" class="form-control" id="judul_buku" name="judul_buku">
+        <label for="exampleFormControlInput1" class="form-label"> Client </label>
+        <input type="text" class="form-control" id="client" name="client">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label"> Project Leader </label>
@@ -33,12 +33,16 @@
         <input type="text" class="form-control" id="leader_email" name="leader_email">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Tanggal Peminjaman </label>
-        <input type="text" class="form-control" id="tanggal_pinjam" name="tanggal_pinjam">
+        <label for="exampleFormControlInput1" class="form-label"> Start Date </label>
+        <input type="text" class="form-control" id="start_date" name="start_date">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Tanggal Pengembalian </label>
-        <input type="text" class="form-control" id="tanggal_pengembalian" name="tanggal_pengembalian">
+        <label for="exampleFormControlInput1" class="form-label"> End Date </label>
+        <input type="text" class="form-control" id="end_date" name="end_date">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"> Persentase Progress (%) </label>
+        <input type="text" class="form-control" id="progress" name="progress">
       </div>
       <div class="mb-3">
         <button type="submit" class="btn btn-primary d-flex align-items-center"><i class="ri-checkbox-circle-fill me-1"></i> Simpan</button>

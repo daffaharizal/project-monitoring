@@ -22,12 +22,12 @@
     <form method="post" action="<?= base_url('proses_edit_pinjam') ?>">
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Nama Mahasiswa </label>
-        <input type="text" class="form-control" id="nama_mahasiswa" name="nama_mahasiswa" value="<?= $data_pinjam->nama_mahasiswa ?>">
+        <label for="exampleFormControlInput1" class="form-label"> Project Name </label>
+        <input type="text" class="form-control" id="project_name" name="project_name" value="<?= $data_pinjam->project_name ?>">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Judul Buku </label>
-        <input type="text" class="form-control" id="judul_buku" name="judul_buku" value="<?= $data_pinjam->judul_buku ?>">
+        <label for="exampleFormControlInput1" class="form-label"> Client </label>
+        <input type="text" class="form-control" id="client" name="client" value="<?= $data_pinjam->client ?>">
       </div>
       <input type="hidden" class="form-control" id="id_pinjam" name="id_pinjam" value="<?= $data_pinjam->id ?>">
       <div class="mb-3">
@@ -35,12 +35,12 @@
         <input type="text" class="form-control" id="project_leader" name="project_leader" value="<?= $data_pinjam->project_leader ?>">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Tanggal Peminjaman </label>
-        <input type="text" class="form-control" id="tanggal_pinjam" name="tanggal_pinjam" value="<?= $data_pinjam->tanggal_pinjam ?>">
+        <label for="exampleFormControlInput1" class="form-label"> Start Date </label>
+        <input type="text" class="form-control" id="tanggal_pinjam" name="tanggal_pinjam" value="<?= $data_pinjam->start_date ?>">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Tanggal Pengembalian </label>
-        <input type="text" class="form-control" id="tanggal_pengembalian" name="tanggal_pengembalian" value="<?= $data_pinjam->tanggal_pengembalian ?>">
+        <label for="exampleFormControlInput1" class="form-label"> End Date </label>
+        <input type="text" class="form-control" id="tanggal_pengembalian" name="tanggal_pengembalian" value="<?= $data_pinjam->end_date ?>">
       </div>
       <div class="mb-3">
         <button type="submit" class="btn btn-primary d-flex align-items-center"><i class="ri-checkbox-circle-fill me-1"></i> Simpan</button>

@@ -10,8 +10,8 @@ class Pinjam extends BaseController
   public function index()
   {
     $pinjam_model = new PinjamModel();
-    $all_pinjam_buku = $pinjam_model->findAll();
-    return view('pinjam', ['all_pinjam_buku' => $all_pinjam_buku]);
+    $all_project_monitoring = $pinjam_model->findAll();
+    return view('pinjam', ['all_project_monitoring' => $all_project_monitoring]);
   }
 
   public function add_data_pinjam()

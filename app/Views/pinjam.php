@@ -35,27 +35,27 @@
         <tbody class="m-2">
           <?php $no = 1; ?>
           <?php
-          foreach ($all_pinjam_buku as $pinjam) : ?>
+          foreach ($all_project_monitoring as $project) : ?>
             <tr>
               <td><?= $no; ?></td>
-              <td><?= $pinjam->nama_mahasiswa; ?></td>
-              <td><?= $pinjam->judul_buku; ?></td>
+              <td><?= $project->project_name; ?></td>
+              <td><?= $project->client; ?></td>
               <td>
-                <p class="m-0"><?= $pinjam->project_leader; ?></p>
-                <p class="text-secondary my-2"><?= $pinjam->leader_email; ?></p>
+                <p class="m-0"><?= $project->project_leader; ?></p>
+                <p class="text-secondary my-2"><?= $project->leader_email; ?></p>
               </td>
-              <td><?= $pinjam->tanggal_pinjam; ?></td>
+              <td><?= $project->start_date; ?></td>
               <td>
-                <p class="align-self-center"><?= $pinjam->tanggal_pengembalian; ?></p>
+                <p class="align-self-center"><?= $project->end_date; ?></p>
               </td>
               <td class="mx-4">
                 <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar <?= $pinjam->progress == 100 ? 'bg-success' : False; ?>" style="width:<?= $pinjam->progress; ?>%"><?= $pinjam->progress; ?>%</div>
+                  <div class="progress-bar <?= $project->progress == 100 ? 'bg-success' : False; ?>" style="width:<?= $project->progress; ?>%"><?= $project->progress; ?>%</div>
                 </div>
               </td>
               <td class="pl-2">
-                <a href="<?= base_url('delete_data_pinjam') . '/' . $pinjam->id ?>" class="btn btn-danger btn-sm mb1-md"><i class="ri-delete-bin-7-fill mb1-md"></i></a>
-                <a href="<?= base_url('edit_data_pinjam') . '/' . $pinjam->id ?>" class="btn btn-success btn-sm"><i class="ri-pencil-fill"></i></a>
+                <a href="<?= base_url('delete_data_pinjam') . '/' . $project->id ?>" class="btn btn-danger btn-sm mb1-md"><i class="ri-delete-bin-7-fill mb1-md"></i></a>
+                <a href="<?= base_url('edit_data_pinjam') . '/' . $project->id ?>" class="btn btn-success btn-sm"><i class="ri-pencil-fill"></i></a>
               </td>
             </tr>
             <?php $no++ ?>
