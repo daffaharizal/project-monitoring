@@ -2,7 +2,7 @@
 
 ## Tech Stack
 
-PHP, Codeigniter 4, Bootstrap 5, Git, and MySQL
+`PHP`, `Codeigniter 4`, `Bootstrap 5`, `Git`, & `MySQL`
 
 
 # Demo Project
