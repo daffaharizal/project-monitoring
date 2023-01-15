@@ -28,6 +28,7 @@
             <th scope="col" class="fw-bold"> PROJECT LEADER</th>
             <th scope="col" class="fw-bold"> START DATE </th>
             <th scope="col" class="fw-bold"> END DATE </th>
+            <th scope="col" class="fw-bold"> PROGRESS </th>
             <th colspan="2" scope="colgroup" class="fw-bold"> ACTION </th>
           </tr>
         </thead>
@@ -45,6 +46,11 @@
               </td>
               <td><?= $pinjam->tanggal_pinjam; ?></td>
               <td><?= $pinjam->tanggal_pengembalian; ?></td>
+              <td class="mx-4">
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 25%">25%</div>
+                </div>
+              </td>
               <td class="pl-2">
                 <a href="<?= base_url('delete_data_pinjam') . '/' . $pinjam->id ?>" class="btn btn-danger btn-sm mb1-md"><i class="ri-delete-bin-7-fill mb1-md"></i></a>
                 <a href="<?= base_url('edit_data_pinjam') . '/' . $pinjam->id ?>" class="btn btn-success btn-sm"><i class="ri-pencil-fill"></i></a>
