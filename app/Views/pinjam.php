@@ -42,20 +42,21 @@
               <td><?= $pinjam->judul_buku; ?></td>
               <td>
                 <p class="m-0"><?= $pinjam->project_leader; ?></p>
-                <p class="text-secondary mb-2"><?= $pinjam->leader_email; ?></p>
+                <p class="text-secondary my-2"><?= $pinjam->leader_email; ?></p>
               </td>
               <td><?= $pinjam->tanggal_pinjam; ?></td>
-              <td><?= $pinjam->tanggal_pengembalian; ?></td>
+              <td>
+                <p class="align-self-center"><?= $pinjam->tanggal_pengembalian; ?></p>
+              </td>
               <td class="mx-4">
                 <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 25%">25%</div>
+                  <div class="progress-bar <?= $pinjam->progress == 100 ? 'bg-success' : False; ?>" style="width:<?= $pinjam->progress; ?>%"><?= $pinjam->progress; ?>%</div>
                 </div>
               </td>
               <td class="pl-2">
                 <a href="<?= base_url('delete_data_pinjam') . '/' . $pinjam->id ?>" class="btn btn-danger btn-sm mb1-md"><i class="ri-delete-bin-7-fill mb1-md"></i></a>
                 <a href="<?= base_url('edit_data_pinjam') . '/' . $pinjam->id ?>" class="btn btn-success btn-sm"><i class="ri-pencil-fill"></i></a>
               </td>
-              <td class="px-0 m-0"></td>
             </tr>
             <?php $no++ ?>
           <?php endforeach ?>
