@@ -18,29 +18,33 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
   <div class="container">
-    <h1 style="font-family: 'Inter', sans-serif;" class="fw-bold text-center mt-4"> Edit Data Peminjam Buku </h1>
-    <form method="post" action="<?= base_url('proses_edit_pinjam') ?>">
+    <h1 style="font-family: 'Inter', sans-serif;" class="fw-bold text-center mt-4 mb-4 text-success"> Edit Data Project </h1>
+    <form method="post" action="<?= base_url('proses_edit_project') ?>">
 
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Project Name </label>
-        <input type="text" class="form-control" id="project_name" name="project_name" value="<?= $data_pinjam->project_name ?>">
+        <label for="exampleFormControlInput1" class="form-label text-success fw-bold"> Project Name </label>
+        <input style="outline: solid 1px green;" type="text" class="form-control" id="project_name" name="project_name" value="<?= $data_project->project_name ?>">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Client </label>
-        <input type="text" class="form-control" id="client" name="client" value="<?= $data_pinjam->client ?>">
+        <label for="exampleFormControlInput1" class="form-label text-success fw-bold"> Client </label>
+        <input style="outline: solid 1px green;" type="text" class="form-control" id="client" name="client" value="<?= $data_project->client ?>">
       </div>
-      <input type="hidden" class="form-control" id="id_pinjam" name="id_pinjam" value="<?= $data_pinjam->id ?>">
+      <input style="outline: solid 1px green;" type="hidden" class="form-control" id="id_project" name="id_project" value="<?= $data_project->id ?>">
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Project Leader </label>
-        <input type="text" class="form-control" id="project_leader" name="project_leader" value="<?= $data_pinjam->project_leader ?>">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> Start Date </label>
-        <input type="text" class="form-control" id="tanggal_pinjam" name="tanggal_pinjam" value="<?= $data_pinjam->start_date ?>">
+        <label for="exampleFormControlInput1" class="form-label text-success fw-bold"> Project Leader </label>
+        <input style="outline: solid 1px green;" type="text" class="form-control" id="project_leader" name="project_leader" value="<?= $data_project->project_leader ?>">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"> End Date </label>
-        <input type="text" class="form-control" id="tanggal_pengembalian" name="tanggal_pengembalian" value="<?= $data_pinjam->end_date ?>">
+        <label for="exampleFormControlInput1" class="form-label text-success fw-bold"> Start Date </label>
+        <input style="outline: solid 1px green;" type="text" class="form-control" id="start_date" name="start_date" value="<?= $data_project->start_date ?>">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label text-success fw-bold"> End Date </label>
+        <input style="outline: solid 1px green;" type="text" class="form-control" id="end_date" name="end_date" value="<?= $data_project->end_date ?>">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label text-success fw-bold"> End Date </label>
+        <input style="outline: solid 1px green;" type="text" class="form-control" id="progress" name="progress" value="<?= $data_project->progress ?>">
       </div>
       <div class="mb-3">
         <button type="submit" class="btn btn-primary d-flex align-items-center"><i class="ri-checkbox-circle-fill me-1"></i> Simpan</button>
