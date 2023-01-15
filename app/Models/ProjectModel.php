@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class PinjamModel extends Model
+class ProjectModel extends Model
 {
   protected $table = 'tabel_project_monitoring';
   protected $primaryKey = 'id';

@@ -35,12 +35,12 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'pinjam::index');
-$routes->get('/add_data_pinjam', 'Pinjam::add_data_pinjam');
-$routes->post('/proses_add_pinjam', 'Pinjam::proses_add_pinjam');
-$routes->get('/edit_data_pinjam/(:any)', 'Pinjam::edit_data_pinjam/$1');
-$routes->post('/proses_edit_pinjam', 'Pinjam::proses_edit_pinjam');
-$routes->get('/delete_data_pinjam/(:any)', 'Pinjam::delete_data_pinjam/$1');
+$routes->get('/', 'Project::index');
+$routes->get('/add_data_project', 'Project::add_data_project');
+$routes->post('/proses_add_pinjam', 'Project::proses_add_pinjam');
+$routes->get('/edit_data_project/(:any)', 'Project::edit_data_project/$1');
+$routes->post('/proses_edit_pinjam', 'Project::proses_edit_pinjam');
+$routes->get('/delete_data_pinjam/(:any)', 'Project::delete_data_pinjam/$1');
 
 
 /*

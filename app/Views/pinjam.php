@@ -18,7 +18,7 @@
   <div class="container" style="font-family: 'Inter', sans-serif;">
     <h1 class="fw-bold text-center py-3 text-success"> Project Monitoring </h1>
     <div style="font-family: 'Inter', sans-serif;" class="p-4 bg-white rounded shadow-sm table-responsive">
-      <a href="<?= base_url('add_data_pinjam') ?>" class="btn btn-primary mb-1 sticky-md-top"><i class="ri-add-circle-fill pt-4 me-1"></i>Tambah Data Project</a>
+      <a href="<?= base_url('add_data_project') ?>" class="btn btn-primary mb-1 sticky-md-top"><i class="ri-add-circle-fill pt-4 me-1"></i>Tambah Data Project</a>
       <table class="table table-borderless rounded bg-white mt-2">
         <thead class="table-light">
           <tr>
@@ -55,7 +55,7 @@
               </td>
               <td class="pl-2">
                 <a href="<?= base_url('delete_data_pinjam') . '/' . $project->id ?>" class="btn btn-danger btn-sm mb1-md"><i class="ri-delete-bin-7-fill mb1-md"></i></a>
-                <a href="<?= base_url('edit_data_pinjam') . '/' . $project->id ?>" class="btn btn-success btn-sm"><i class="ri-pencil-fill"></i></a>
+                <a href="<?= base_url('edit_data_project') . '/' . $project->id ?>" class="btn btn-success btn-sm"><i class="ri-pencil-fill"></i></a>
               </td>
             </tr>
             <?php $no++ ?>
